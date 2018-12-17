@@ -1,0 +1,4 @@
+.gitignore,noupdate
+.git/,nonar,noupdate
+ghost/master/exec/log.txt,noupdate
+ghost/master/exec/userID.txt,noupdate

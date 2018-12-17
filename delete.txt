@@ -1,0 +1,6 @@
+ghost\master\sspText1.txt
+ghost\master\sspText2.txt
+ghost\master\sspText3.txt
+
+shell\master\surface1111.png
+shell\master\surface101.png

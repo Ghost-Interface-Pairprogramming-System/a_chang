@@ -1,0 +1,9 @@
+ghost/master/profile/
+
+shell/*/
+!shell/master/
+shell/master/profile/
+
+yaya_variable.cfg
+log.txt
+userID.txt

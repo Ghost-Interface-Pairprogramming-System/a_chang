@@ -1,0 +1,22 @@
+﻿//検索したいワードをぐぐる
+InputSearchWord{
+_url = "https://www.google.co.jp"
+"\C\j[%(_url)] \e" //_urlにジャンプ
+}
+
+NowQuestion{
+  url = reference[2]
+  selectName = reference[0]
+  FUNCTIONEX('exec\exec.dll','norm','..\logWriter.exe',selectName)
+  "\j[%(url)]/
+  問題に挑戦\e"
+}
+
+Onexeptionname{
+  "普遍的"
+}
+
+Onexeptionname_tuika{
+  "例外"
+}
+

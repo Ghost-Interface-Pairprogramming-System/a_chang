@@ -1,0 +1,61 @@
+﻿//Google以外は日本語での検索非対応です。
+
+OnGIPSExceptionOccurred{
+
+  era = reference[1] //エラー名代入000
+  eraLine =reference[3] //エラー行取得
+  eraFile = reference[2] //エラーの起きたファイル
+
+
+  // 共通部分
+  "\0\s[0]/
+  【%(era)】\n/
+  %(エラー場所取得)\n\n"
+  -- // 以下、未知・既知・詳細の有無判定  
+  if (EVAL("On" + era + "_" + selectName)) {// 詳細付き
+    EVAL("On" + era + "_" + selectName)
+  } elseif (EVAL("On" + era)) {// 既知
+    EVAL("On" + era)
+  } else {// 未知
+    "%(era)は未知のエラーです？\n\n/
+    \q[googleで検索,google," + era +"]\n/
+    \q[yahooで検索,yahoo," + era +"]\n/
+    \q[bingで検索,bing," + era +"]\n/
+    \q[Qiitaで検索,Qiita," + era +"]"
+  }
+  --
+  '\e'
+}
+
+
+google{
+
+_url = "https://www.google.co.jp/search?q=" + reference[2]
+"\C\j[%(_url)] \e" //_urlにジャンプ
+
+}
+
+yahoo{
+
+_url = "https://search.yahoo.co.jp/search?p=" + reference[2]
+"\C\j[%(_url)] \e" //_urlにジャンプ
+
+}
+
+bing{
+
+_url = "https://www.bing.com/search?q=" + reference[2]
+"\C\j[%(_url)] \e" //_urlにジャンプ
+
+}
+
+Qiita{
+
+_url = "https://qiita.com/search?q=" + reference[2]
+"\C\j[%(_url)] \e" //_urlにジャンプ
+
+}
+
+エラー場所取得{
+  "場所:%(eraFile)の%(eraLine)行目"
+}

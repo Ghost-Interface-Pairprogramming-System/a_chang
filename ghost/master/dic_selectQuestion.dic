@@ -1,0 +1,11 @@
+﻿OnchoseQ{
+    "\0\s[0]/使いたいAPIを選択してください\n/
+    \q[googleを開く,InputSearchWord,sspText1]\n/
+    \q[お天気API,NowQuestion,https://github.com/Ghost-Interface-Pairprogramming-System/GIPS-doc/blob/master/API/C-Sharp/C%23%E3%81%A7API%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F.md]\n/
+    \q[iTunesAPI,NowQuestion,https://github.com/Ghost-Interface-Pairprogramming-System/GIPS-doc/blob/master/API/Java/JavaSampleAPI.md]\n/
+    \e/"
+}
+
+//追加する場合は下の内容参考にを入力してください
+//\q[表示される文字列,NowQuestion（ここは変えないでください）,解説ページのURL]\n/
+
