@@ -1,5 +1,43 @@
+charset,UTF-8
+
+descript
+{
+  	version,1
+}
 
 surface0
 {
-collision0,20,20,151,122,Head
+  	element0,base,eye0.png,0,0
+}
+
+surface10
+{
+  	element0,base,surface0010.png,0,0
+}
+
+// アニメーション
+
+surface1000
+{
+    element0,base,eye0.png,0,0
+}
+
+surface1001
+{
+    element0,base,eye1.png,0,0
+}
+
+surface1002
+{
+    element0,base,eye2.png,0,0
+}
+
+surface.append0
+{
+  	collision0,20,20,151,122,Head
+	animation0.interval,periodic,5
+	animation0.pattern1,overlay,1001,50,0,0
+	animation0.pattern2,overlay,1002,50,0,0
+	animation0.pattern3,overlay,1001,50,0,0
+	animation0.pattern4,overlay,-1,50,0,0
 }
