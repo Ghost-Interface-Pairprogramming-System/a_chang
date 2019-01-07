@@ -22,7 +22,8 @@ dic, yaya_shiori3.dic	// YAYA:設定辞書。必ず最初に指定すること�
 dic, dic_main.dic			// メイン辞書
 dic, dic_utility.dic			// ユーティリティ辞書
 dic, dic_test.dic
-dic,dic_gipsdic.dic
+dic,dic_gipsdic_dotnet.dic
+dic,dic_gipsdic_java.dic
 dic,dic_gips.dic
 dic,dic_gipsQuiz.dic
 dic,dic_selectQuestion.dic
