@@ -1,11 +1,9 @@
 //----------------------------------------------
-// GIPSアドバイス辞書
+// GIPSアドバイス辞書（Java）
 //----------------------------------------------
 
-// Java
-
 Onjava.lang.ArithmeticException{
-'ゼロ除算、0で割る計算がなされた際に発生する例外ね。'
+'ゼロ除算、0で割る計算がなされた際に発生する例外です。'
 }
 
 Onjava.lang.NullPointerException{
@@ -13,7 +11,7 @@ Onjava.lang.NullPointerException{
 }
 
 Onjava.lang.StackOverflowError{
-'スタックオーバーフロー。再帰の呼び出しのしすぎかな。\n\n/
+'スタックオーバーフロー。再帰の呼び出しのしすぎかも。\n\n/
 再帰を呼び出す、呼び出さないを分ける条件式を確認してみようか。'
 }
 
@@ -24,80 +22,80 @@ Onjava.lang.NumberFormatException{
 }
 
 Onjava.lang.ArrayIndexOutOfBoundsException{
-'配列とかのサイズの外の添え字を指定した時の例外ね。\n/
+'配列とかのサイズの外の添え字を指定した時の例外です。\n/
 配列の要素の数を確認してみようか。'
 }
 
 Onjava.nio.file.FileAlreadyExistsException{
-‘ファイルが存在していない’
+'ファイルが存在していない'
 }
 
 Onjava.nio.file.DirectoryNotEmptyException{
-‘ディレクトリが存在していない’
+'ディレクトリが存在していない'
 }
 
 Onjava.nio.file.NoSuchFileException{
-‘ファイルが存在していない’
+'ファイルが存在していない'
 }
 
 Onjava.net.SocketException{
-‘通信相手が切断してからアクセスをしている’
+'通信相手が切断してからアクセスをしている'
 }
 
 Onjava.lang.UnsupportedOperationException{
-‘サポートされていないクラスの使用’
+'サポートされていないクラスの使用'
 }
 
 Onjava.lang.UnsupportedClassVersionError{
-‘クラスが要求しているバージョンがJavaVMでサポートしていない’
+'クラスが要求しているバージョンがJavaVMでサポートしていない'
 }
 
 Onjava.lang.reflect.InvocationTargetException{
-‘Invokeメソッドによってラップされた例外’
+'Invokeメソッドによってラップされた例外'
 }
 
 Onjava.lang.OutOfMemoryError{
-‘メモリー不足’
+'メモリー不足'
 }
 
 Onjava.lang.NoClassDefFoundError{
-‘クラスのファイルが見当たらない’
+'クラスのファイルが見当たらない'
 }
 
 Onjava.lang.InternalError{
-‘内部エラー\n/
-Throwsで宣言されているものが絶対に発生しない場合’
+'内部エラー\n/
+Throwsで宣言されているものが絶対に発生しない場合'
 }	
 
 Onjava.lang.IncompatibleClassChangeError{
-‘クラスのコンパイルがされていない’
+'クラスのコンパイルがされていない'
 }
 
 Onjava.lang.IllegalArgumentException{
-‘メソッドに与える引数が間違っている\n/
-定義している引数の確認’
+'メソッドに与える引数が間違っている\n/
+定義している引数の確認'
 }
 
 Onjava.lang.CloneNotSupportedException{
-‘Cloneableを実装せずにcloneメソッドをオーバーライドしている’
+'Cloneableを実装せずにcloneメソッドをオーバーライドしている'
 }
 
 Onjava.lang.ClassCastException{
-‘クラスの変化に失敗\n/
-変換先のクラスを確認’
+'クラスの変化に失敗\n/
+変換先のクラスを確認'
 }
 
 Onjava.lang.AssertionError{
-‘assertが検知’
+'assertが検知'
 }
 
 Onjava.io.NotSerializableException{
-‘シリアライズに失敗\n/
-対象クラスにSerializableが実装されているか確認’
+'シリアライズに失敗\n/
+対象クラスにSerializableが実装されているか確認'
 }
 
 Onjava.io.InvalidClassException{
-‘シリアライズに失敗\n/
-デフォルトコンストラクタにアクセス可能か確認’
+'シリアライズに失敗\n/
+デフォルトコンストラクタにアクセス可能か確認'
 }
 
