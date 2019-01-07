@@ -12,8 +12,8 @@
 
 tutorial{
     "\0\s[0]/どの説明を聞きますか？\n/
-    \q[eclipseについて,tutorialEclipse,sspText1]\n/
-    \q[visualstudioについて,tutorialVisualstudio,sspText1]\n/
+    \q[eclipseについて,tutorialEclipse]\n/
+    \q[visualstudioについて,tutorialVisualstudio]\n/
     \e/"
 
 }
