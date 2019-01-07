@@ -3,6 +3,8 @@ ghost/master/profile/
 shell/*/
 !shell/master/
 shell/master/profile/
+!shell/mini/
+shell/mini/profile/
 
 yaya_variable.cfg
 log.txt
