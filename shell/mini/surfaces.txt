@@ -1,0 +1,16 @@
+charset,UTF-8
+
+descript
+{
+  	version,1
+}
+
+surface0
+{
+  	element0,base,achangd.png,0,0
+}
+
+surface10
+{
+  	element0,base,bchangd.png,0,0
+}
