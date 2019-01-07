@@ -1,7 +1,7 @@
 ﻿OnchoseQ{
     "\0\s[0]/使いたいAPIを選択してください\n/
     \q[googleを開く,InputSearchWord,sspText1]\n/
-    \q[チュートリアル,tutorial,sspText1]\n/
+    \q[使い方],tutorial,sspText1]\n/
     \q[お天気API,NowQuestion,https://github.com/Ghost-Interface-Pairprogramming-System/GIPS-doc/blob/master/API/C-Sharp/C%23%E3%81%A7API%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F.md]\n/
     \q[iTunesAPI,NowQuestion,https://github.com/Ghost-Interface-Pairprogramming-System/GIPS-doc/blob/master/API/Java/JavaSampleAPI.md]\n/
     \e/"
@@ -11,7 +11,7 @@
 //\q[表示される文字列,NowQuestion（ここは変えないでください）,解説ページのURL]\n/
 
 tutorial{
-    "\0\s[0]/どの説明聞きますか？\n/
+    "\0\s[0]/どの説明を聞きますか？\n/
     \q[eclipseについて,tutorialEclipse,sspText1]\n/
     \q[visualstudioについて,tutorialVisualstudio,sspText1]\n/
     \e/"
@@ -19,9 +19,13 @@ tutorial{
 }
 
 tutorialEclipse{
-    "イクリプスについて"
+ "Eclipseの場合の使い方について説明します。\n/
+  Eclipseはデバッグ実行の場合のみ対応しています。\n/
+  デバッグ実行時に発生した実行時例外に対してアドバイスができます。"
 }
 
 tutorialVisualstudio{
-    "visualStudioについて"
+ "Visual Studioの場合の使い方を説明します。\n/
+  私を起動している状態、つまりはこの状態で\n/
+  実行時に発生した実行時例外に対してアドバイスができます。"
 }
