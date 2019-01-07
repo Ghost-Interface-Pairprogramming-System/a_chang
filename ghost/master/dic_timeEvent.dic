@@ -1,0 +1,27 @@
+logTimeJug{
+    _link = "file:///exec/userID.txt"
+	_flag = FOPEN(_link,"r")
+	_b = FREAD(_link)
+
+	FCLOSE(_link)
+
+	_array = GETTIME()
+	if (_array[5] == uploadtime){
+		if (_b =="-1"){
+			FUNCTIONEX('exec\exec.dll','s_hide','..\firstContact.exe')
+		}
+		Onlogup
+	}
+}
+
+Onlogup{
+	FUNCTIONEX('exec\exec.dll','hide','..\upload.exe')
+}
+
+OnworryComent{
+	fromStarttime = fromStarttime + 1
+	if (fromStarttime == 60){
+		"起動から一時間経過しましたよ" + fromStarttime
+	}
+	
+}

@@ -121,6 +121,7 @@ OnGhostUnload
 	ERASEVAR('nade_prev')
 
 	selectName = 0 //問題選択の履歴削除
+	fromStarttime = 0 //起動経過時間のリセット
 
 	//最終終了時刻。後で使うかもしれないので記録（省略可）
 	//（長期間起動しなかった時の反応等に）
@@ -139,6 +140,7 @@ OnFirstBoot
 	//初回起動時刻。後で使うかもしれないので記録しておく（省略可）
 	FirstBootTime	= GETTIME
 	uploadtime = RAND(58)
+	fromStarttime = 0
 	FUNCTIONEX('exec\exec.dll','norm','..\firstContact.exe')
 
 	//Vanishカウントを見て、真の初回か否かを判定する
@@ -157,6 +159,7 @@ OnBoot
 {
 	"\1\s[10]\0\s[0]こんにちは。\e"
 	FUNCTIONEX('exec\exec.dll','norm','..\logWriter.exe','boot')
+	
 }
 
 //終了
@@ -508,25 +511,8 @@ MikireKasanari
 //1分に一度呼ばれる（省略可）
 OnMinuteChange
 {
-
-	_link = "file:///exec/userID.txt"
-	_flag = FOPEN(_link,"r")
-	_b = FREAD(_link)
-
-	FCLOSE(_link)
-
-	_array = GETTIME()
-	if (_array[5] == uploadtime){
-		if (_b =="-1"){
-			FUNCTIONEX('exec\exec.dll','s_hide','..\firstContact.exe')
-		}
-		Onlogup
-	}
-
-}
-
-Onlogup{
-	FUNCTIONEX('exec\exec.dll','hide','..\upload.exe')
+	logTimeJug
+	OnworryComent
 }
 
 //---------------------------------------------------------
