@@ -27,75 +27,76 @@ Onjava.lang.ArrayIndexOutOfBoundsException{
 }
 
 Onjava.nio.file.FileAlreadyExistsException{
-'ファイルが存在していない'
+'指定したファイルが既に存在しているみたいです。'
 }
 
 Onjava.nio.file.DirectoryNotEmptyException{
-'ディレクトリが存在していない'
+'ディレクトリが存在していないみたいです。'
 }
 
 Onjava.nio.file.NoSuchFileException{
-'ファイルが存在していない'
+'指定したファイルが存在していないみたいです。'
 }
 
 Onjava.net.SocketException{
-'通信相手が切断してからアクセスをしている'
+'接続が切れているみたいです。'
 }
 
 Onjava.lang.UnsupportedOperationException{
-'サポートされていないクラスの使用'
+'その操作はサポートされていないみたいです。'
 }
 
 Onjava.lang.UnsupportedClassVersionError{
-'クラスが要求しているバージョンがJavaVMでサポートしていない'
+'クラスファイルの要求するバージョンを、実行するJavaVMが満たしていないみたいです。\n/
+JavaコンパイラとJavaVMのバージョンがずれていませんか？'
 }
 
 Onjava.lang.reflect.InvocationTargetException{
-'Invokeメソッドによってラップされた例外'
+'Invokeメソッドによってラップされた例外です。'
 }
 
 Onjava.lang.OutOfMemoryError{
-'メモリー不足'
+'メモリーが不足しています。'
 }
 
 Onjava.lang.NoClassDefFoundError{
-'クラスのファイルが見当たらない'
+'クラスのファイルが見当たりません。'
 }
 
 Onjava.lang.InternalError{
-'内部エラー\n/
-Throwsで宣言されているものが絶対に発生しない場合'
+'内部エラーです。\n/
+仮想マシン内で予期せぬエラーが発生したみたいです。'
 }	
 
 Onjava.lang.IncompatibleClassChangeError{
-'クラスのコンパイルがされていない'
+'コンパイルされていないクラスを利用しています。'
 }
 
 Onjava.lang.IllegalArgumentException{
-'メソッドに与える引数が間違っている\n/
-定義している引数の確認'
+'メソッドに与える引数が不正です。\n/
+使用したメソッドのドキュメントを確認しましょう。'
 }
 
 Onjava.lang.CloneNotSupportedException{
-'Cloneableを実装せずにcloneメソッドをオーバーライドしている'
+'Cloneableを実装せずにcloneメソッドをオーバーライドしているみたいです。'
 }
 
 Onjava.lang.ClassCastException{
-'クラスの変化に失敗\n/
-変換先のクラスを確認'
+'クラスの変換に失敗しました。\n/
+変換元、変換先が互換性のあるクラスか確認してください。'
 }
 
 Onjava.lang.AssertionError{
-'assertが検知'
+'Assertが検知されたみたいです。'
 }
 
 Onjava.io.NotSerializableException{
-'シリアライズに失敗\n/
-対象クラスにSerializableが実装されているか確認'
+'シリアライズに失敗しました。\n/
+対象クラスにSerializableが実装されているか確認してみましょう。'
 }
 
 Onjava.io.InvalidClassException{
-'シリアライズに失敗\n/
-デフォルトコンストラクタにアクセス可能か確認'
+'シリアライズに失敗しました。\n/
+デフォルトコンストラクタにアクセス可能か確認してみましょう。'
 }
 

@@ -35,35 +35,39 @@ OnSystem.DivideByZeroException{
 }
 
 OnSystem.NotFiniteNumberException{
-'浮動小数点が無限大'
+'浮動小数点の無限大値を用いた結果起こった例外です。'
 }
 
 OnSystem.FormatException{
-'引数の書式がおかしい'
+'引数の書式がおかしいみたいです。\n/
+メソッドのドキュメントを確認しましょう。'
 }
 
 OnSystem.IndexOutOfRangeException{
-'配列の添え字おかしい'
+'配列の添え字がおかしいみたいです。\n/
+配列の要素数を確認しましょう。'
 }
 
 OnSystem.InvalidCastException{
-'これキャスト無理'
+'クラスの変換に失敗しました。\n/
+変換元、変換先が互換性のあるクラスか確認してください。'
 }
 
 OnSystem.InvalidOperationException{
-'なんかおかしいけど引数以外の原因やで'
+'引数以外の原因で何か問題があったようです。\n/
+ひとまずメソッドのドキュメントを確認してみましょう。'
 }
 
 OnSystem.ObjectDisposedException{
-'殺した後のオブジェクト使ってるぞ'
+'Disposeした後のオブジェクトを使っているみたいです。'
 }
 
 OnSystem.NotImplementedException{
-'未実装のメソッド使ってるで'
+'未実装のメソッドを実行してしまったみたいです。'
 }
 
 OnSystem.NotSupportedException{
-'このメソッドはサポートされていません'
+'サポートされていないメソッドを実行してしまったみたいです。'
 }
 
 OnSystem.NullReferenceException{
@@ -71,25 +75,25 @@ OnSystem.NullReferenceException{
 }
 
 OnSystem.PlatformNotSupportException{
-'そのプラットフォームには対応してない'
+'このプラットフォームには対応してないメソッドを実行してしまったみたいです。'
 }
 
 OnSystem.TimeoutException{
-'タイムアウトです'
+'タイムアウトが起きたとのことです。'
 }
 
 OnSystem.Collections.Generics.KeyNotFoundException{
-'そのキーに対応する要素ないよ'
+'そのキーに対応する要素が存在していないみたいです。'
 }
 
 OnSystem.IO.DirectoryNotFoundException{
-'そのディレクトリないよ'
+'指定されたディレクトリが存在しなかったみたいです。'
 }
 
 OnSystem.IO.FileNotFoundException{
-'そのファイルないよ'
+'指定したファイルが存在しません。'
 }
 
 OnSystem.IO.EndOfStreamException{
-'もうストリーム末尾までとうたつしてるよ'
+'既にストリーム末尾まで到達しているみたいです。'
 }
